@@ -1,6 +1,6 @@
 def vida(edad):
     n = 1
-    while n <= int(edad):
+    while n <= edad:
         print(n, end=" ")
         n += 1
 
@@ -16,6 +16,7 @@ def pedirEdad():
             print("Edad no válida")
         except Exception:
             print("Error")
+    return edad
 
 def main():
 
