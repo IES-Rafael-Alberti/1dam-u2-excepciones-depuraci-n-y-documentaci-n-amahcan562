@@ -1,17 +1,21 @@
 def pedirContraseña():
+    contraseña = input("Introduzca la contraseña: ")
+
+    if contraseña != "hola":
+        raise NameError
+
+    
+
+def main():
     salir = False
     while not salir:
-        contraseña = input("Introduzca la contraseña: ")
-
         try:
-            contraseña == "vivaespaña"
+            pedirContraseña()
             salir = True
         except NameError:
             print("Incorrect Password!!")
-    return contraseña
 
-def main():
-    pedirContraseña()
+    print("Lo has conseguido!")
 
 if __name__ == "__main__":
     main()
